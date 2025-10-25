@@ -75,6 +75,12 @@ fun PraktikumPAM(modifier: Modifier){
                 .border(3.dp, AccentBorder, CircleShape)
         )
 
+        Spacer(modifier = Modifier.height(16.dp))
 
+        Row(
+            modifier = Modifier.fillMaxWidth(0.5f),
+            horizontalArrangement = Arrangement.SpaceEvenly,
+            verticalAlignment = Alignment.CenterVertically
+        ) {}
     }
 }
