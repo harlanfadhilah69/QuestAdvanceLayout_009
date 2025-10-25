@@ -92,6 +92,15 @@ fun PraktikumPAM(modifier: Modifier){
             )
 
 
+            Image(
+                painter = painterResource(id = R.drawable.instagram),
+                contentDescription = "instagram",
+                modifier = Modifier
+                    .size(41.dp)
+                    .clip(CircleShape)
+                    .border(2.dp, Color.DarkGray, CircleShape)
+            )
+
         }
     }
 }
