@@ -101,6 +101,15 @@ fun PraktikumPAM(modifier: Modifier){
                     .border(2.dp, Color.DarkGray, CircleShape)
             )
 
+            Image(
+                painter = painterResource(id = R.drawable.linkedin),
+                contentDescription = "LinkedIn",
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .border(2.dp, Color.Gray, CircleShape)
+            )
+
         }
     }
 }
