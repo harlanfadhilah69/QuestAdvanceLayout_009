@@ -141,6 +141,16 @@ fun PraktikumPAM(modifier: Modifier){
             textAlign = TextAlign.Center,
         )
 
+        Spacer(modifier = Modifier.height(32.dp))
 
+        OutlinedCard(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(60.dp),
+            shape = RoundedCornerShape(30.dp),
+            colors = CardDefaults.outlinedCardColors(
+                containerColor = AccentBlue
+            )
+        ) {}
     }
 }
