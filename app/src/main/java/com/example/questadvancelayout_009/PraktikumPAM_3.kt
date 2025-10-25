@@ -207,6 +207,62 @@ fun PraktikumPAM(modifier: Modifier){
             }
         }
 
+        Spacer(modifier = Modifier.height(12.dp))
+
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(60.dp),
+            shape = RoundedCornerShape(30.dp),
+            colors = CardDefaults.outlinedCardColors(
+                containerColor = AccentBlue
+            )
+        ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 20.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(imageVector = Icons.Default.Phone, contentDescription = "Number Phone", tint = Color.White)
+                Spacer(modifier = Modifier.width(16.dp))
+                Text(
+                    text = "Number Phone",
+                    color = Color.White,
+                    fontSize = 16.sp,
+                    modifier = Modifier.weight(1f)
+                )
+                Icon(imageVector = Icons.Default.Check, contentDescription = "Go", tint = Color.White,
+                    modifier = Modifier
+                        .size(20.dp)
+                        .border(2.dp, Color.White, CircleShape)
+                )
+            }
+        }
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        Button(
+            onClick = { },
+            shape = RoundedCornerShape(30.dp),
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Red),
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(56.dp)
+        ) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(imageVector = Icons.Default.Close, contentDescription = "Logout", tint = Color.White)
+                Spacer(modifier = Modifier.width(8.dp))
+                Text(
+                    text = "Logout",
+                    color = Color.White,
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+        }
 
     }
 }
