@@ -66,6 +66,15 @@ fun PraktikumPAM(modifier: Modifier){
     ){
         Spacer(modifier = Modifier.height(60.dp))
 
+        Image(
+            painter = painterResource(id = R.drawable.foto),
+            contentDescription = "Profile Picture",
+            modifier = Modifier
+                .size(130.dp)
+                .clip(CircleShape)
+                .border(3.dp, AccentBorder, CircleShape)
+        )
+
 
     }
 }
