@@ -81,6 +81,17 @@ fun PraktikumPAM(modifier: Modifier){
             modifier = Modifier.fillMaxWidth(0.5f),
             horizontalArrangement = Arrangement.SpaceEvenly,
             verticalAlignment = Alignment.CenterVertically
-        ) {}
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.facebook),
+                contentDescription = "facebook",
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .border(2.dp, Color.White, CircleShape)
+            )
+
+
+        }
     }
 }
