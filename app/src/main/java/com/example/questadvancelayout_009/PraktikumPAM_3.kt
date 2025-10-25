@@ -269,7 +269,7 @@ fun PraktikumPAM(modifier: Modifier){
         Text(
             text = stringResource(id = R.string.copy),
             color = Color.White,
-            fontSize = 18.sp,
+            fontSize = 20.sp,
             modifier = Modifier.padding(bottom = 30.dp)
         )
     }
