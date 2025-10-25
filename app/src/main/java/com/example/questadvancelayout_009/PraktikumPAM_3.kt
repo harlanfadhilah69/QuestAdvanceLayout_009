@@ -184,6 +184,29 @@ fun PraktikumPAM(modifier: Modifier){
             colors = CardDefaults.outlinedCardColors(
                 containerColor = AccentBlue
             )
-        ) {}
+        ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 20.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Icon(imageVector = Icons.Default.Email, contentDescription = "Email", tint = Color.White)
+                Spacer(modifier = Modifier.width(16.dp))
+                Text(
+                    text = "Email",
+                    color = Color.White,
+                    fontSize = 16.sp,
+                    modifier = Modifier.weight(1f)
+                )
+                Icon(imageVector = Icons.Default.Check, contentDescription = "Go", tint = Color.White,
+                    modifier = Modifier
+                        .size(20.dp)
+                        .border(2.dp, Color.White, CircleShape)
+                )
+            }
+        }
+
+
     }
 }
