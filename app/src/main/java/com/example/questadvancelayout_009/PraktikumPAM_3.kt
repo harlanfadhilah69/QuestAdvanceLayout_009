@@ -119,6 +119,15 @@ fun PraktikumPAM(modifier: Modifier){
                     .border(2.dp, Color.White, CircleShape)
             )
         }
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text(
+            text = stringResource(id = R.string.nama),
+            color = Color.White,
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold
+        )
+
 
     }
 }
