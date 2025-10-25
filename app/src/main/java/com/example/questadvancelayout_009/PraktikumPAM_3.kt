@@ -110,6 +110,15 @@ fun PraktikumPAM(modifier: Modifier){
                     .border(2.dp, Color.Gray, CircleShape)
             )
 
+            Image(
+                painter = painterResource(id = R.drawable.twitter),
+                contentDescription = "twitter",
+                modifier = Modifier
+                    .size(40.dp)
+                    .clip(CircleShape)
+                    .border(2.dp, Color.White, CircleShape)
+            )
         }
+
     }
 }
