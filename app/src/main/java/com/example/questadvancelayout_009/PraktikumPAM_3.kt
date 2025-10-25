@@ -264,5 +264,13 @@ fun PraktikumPAM(modifier: Modifier){
             }
         }
 
+        Spacer(modifier = Modifier.weight(1f))
+
+        Text(
+            text = stringResource(id = R.string.copy),
+            color = Color.White,
+            fontSize = 18.sp,
+            modifier = Modifier.padding(bottom = 30.dp)
+        )
     }
 }
