@@ -128,6 +128,12 @@ fun PraktikumPAM(modifier: Modifier){
             fontWeight = FontWeight.Bold
         )
 
+        Text(
+            text = stringResource(id = R.string.Tag),
+            color = Color.White,
+            fontSize = 18.sp
+        )
+
 
     }
 }
