@@ -151,6 +151,13 @@ fun PraktikumPAM(modifier: Modifier){
             colors = CardDefaults.outlinedCardColors(
                 containerColor = AccentBlue
             )
-        ) {}
+        ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(horizontal = 20.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {}
+        }
     }
 }
